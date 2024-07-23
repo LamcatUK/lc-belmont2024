@@ -46,7 +46,7 @@
         }
     }
     &__image {
-        transition: filter var(--transition), scale var(--transition);
+        transition: filter var(--transition), scale var(--transition) !important;
         object-fit: cover;
         width: 100%;
         height: 100%;

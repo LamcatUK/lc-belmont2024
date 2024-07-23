@@ -22480,7 +22480,7 @@ footer .colophon a:hover {
   opacity: 0;
 }
 .gallery__image {
-  transition: filter var(--transition), scale var(--transition);
+  transition: filter var(--transition), scale var(--transition) !important;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
