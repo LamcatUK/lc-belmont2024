@@ -29,6 +29,7 @@ defined('ABSPATH') || exit;
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
     if (get_field('ga_property', 'options')) {
+      if ( !is_user_logged_in() ) {
         ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
@@ -45,7 +46,8 @@ defined('ABSPATH') || exit;
             '<?=get_field('ga_property', 'options')?>'
         );
     </script>
-    <?php
+      <?php
+      }
     }
 if (get_field('google_site_verification', 'options')) {
     echo '<meta name="google-site-verification" content="' . get_field('google_site_verification', 'options') . '" />';
@@ -151,6 +153,7 @@ if (is_front_page() || is_page('contact-us')) {
 do_action('wp_body_open');
 
 if (get_field('gtm_property', 'options')) {
+  if ( !is_user_logged_in() ) {
     ?>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe
@@ -158,6 +161,7 @@ if (get_field('gtm_property', 'options')) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <?php
+  }
 }
 ?>
     <header id="navigation">
