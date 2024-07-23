@@ -137,6 +137,8 @@ function lc_theme_enqueue()
     wp_enqueue_script('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), null, true);
     wp_enqueue_style('child-understrap-styles', get_stylesheet_directory_uri() . $theme_styles, array(), $css_version);
 
+    // wp_enqueue_script('timelyScript', 'https://book.gettimely.com/widget/book-button-v1.5.js', array(), null, true);
+
     $js_version = $theme_version . '.' . filemtime(get_stylesheet_directory() . $theme_scripts);
     
     wp_enqueue_script('child-understrap-scripts', get_stylesheet_directory_uri() . $theme_scripts, array(), $js_version, true);
@@ -163,7 +165,7 @@ add_shortcode('timely_button', 'timelyButton');
 function timelyButton() {
     ob_start();
     ?>
-    <script id="timelyScript" src="https://book.gettimely.com/widget/book-button-v1.5.js"></script>
+    <script id="timelyScript" src="https://book.gettimely.com/widget/book-button-v1.5.js" async></script>
 <script>
     new timelyButton("belmontskinandlaserclinic", {
         "style": "dark"
