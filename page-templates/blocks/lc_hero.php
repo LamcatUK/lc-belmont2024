@@ -2,6 +2,7 @@
 $d = 200;
 $class = $block['className'] ?? null;
 ?>
+
 <section class="hero <?=$class?>">
     <?=wp_get_attachment_image(get_field('background'), 'full', false, array('class' => 'hero__bg'))?>
     <div class="overlay"></div>

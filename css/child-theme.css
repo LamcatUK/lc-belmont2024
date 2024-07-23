@@ -22389,7 +22389,7 @@ footer .colophon a:hover {
 }
 .three_col_cards__title {
   font-size: var(--fs-500);
-  color: var(--col-taupe-600);
+  color: var(--_underline-colour);
 }
 .three_col_cards__content {
   text-align: center;
