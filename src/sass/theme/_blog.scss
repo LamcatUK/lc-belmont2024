@@ -75,6 +75,12 @@
     padding-top: 2rem;
     padding-bottom: 5rem;
 
+    &__content {
+        p {
+            margin-bottom: 1.5em;
+        }
+    }
+
     h2, .h2 {
         font-size: var(--fs-600);
     }
@@ -157,5 +163,30 @@
                 }
             }
         }
+    }
+}
+
+.author {
+    display: grid;
+    gap: 1rem;
+    background-color: var(--col-taupe-400);
+    color: var(--col-cream-400);
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    @media (min-width:768px) {
+        grid-template-columns: 150px auto;
+    }
+    a:hover {
+        color: white;
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+    img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        outline: 2px solid var(--col-copper-400);
+        outline-offset: -1px;
     }
 }
