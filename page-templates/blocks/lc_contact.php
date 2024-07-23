@@ -20,12 +20,7 @@
                         <?=contact_phone()?>
                     </div>
                     <div class="mb-3">To schedule an appointment, please click below</div>
-                    <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
-                    <script>
-                        new timelyButton("belmontskinandlaserclinic", {
-                            "style": "dark"
-                        });
-                    </script>
+                    <?=timelyButton()?>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-left">

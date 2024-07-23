@@ -21,12 +21,7 @@
                     <?=get_field('opening_hours', 'options')?>
                 </div>
                 <div class="mb-3">To schedule an appointment, please click below</div>
-                <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
-                <script>
-                    new timelyButton("belmontskinandlaserclinic", {
-                        "style": "dark"
-                    });
-                </script>
+                <?=timelyButton()?>
                 <div class="my-4">Or email <a href="mailto:<?=get_field('contact_email', 'options')?>"><?=get_field('contact_email', 'options')?></a></div>
             </div>
             <div class="col-md-6" data-aos="fade-left">

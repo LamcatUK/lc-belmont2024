@@ -159,10 +159,12 @@ add_action('enqueue_block_editor_assets', 'custom_gutenberg_scripts');
 
 add_filter('wpcf7_autop_or_not', '__return_false');
 
-add_shortcode('timely_button', function () {
+add_shortcode('timely_button', 'timelyButton');
+
+function timelyButton() {
     ob_start();
     ?>
-<script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.5.js"></script>
+<script id="timelyScript" src="https://book.gettimely.com/widget/book-button-v1.5.js" async></script>
 <script>
     new timelyButton("belmontskinandlaserclinic", {
         "style": "dark"
@@ -170,7 +172,7 @@ add_shortcode('timely_button', function () {
 </script>
 <?php
     return ob_get_clean();
-});
+}
 
 
 //-------------- pricing schema
