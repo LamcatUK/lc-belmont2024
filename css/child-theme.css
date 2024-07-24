@@ -21743,7 +21743,7 @@ strong, b, .fw-bold {
 }
 
 .button {
-  padding: 0.75em 2em;
+  padding: 0.6em 2em;
   text-decoration: none;
   border-radius: 0.05rem;
   transition: background-color var(--transition), color var(--transition), border var(--transition);
