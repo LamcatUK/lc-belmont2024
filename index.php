@@ -95,6 +95,14 @@ foreach ($cats as $cat) {
     }
 ?>
         </div>
+        <div class="author mx-2">
+            <img src="/wp-content/uploads/2024/06/Belmont-01-01-1024x1020-1-300x300.jpg" alt="Alease Parlanti">
+            <div>
+                <p><a href="/about/">Alease Parlanti</a> is a dedicated skincare specialist at Belmont Skin &amp; Laser Clinic. With a passion for helping clients achieve their best skin, she brings extensive knowledge and experience to every treatment.</p>
+                <p>Whether you're looking to remove unwanted hair with our advanced <a href="/services/laser-hair-removal/">laser hair removal</a>, erase tattoos with our precise <a href="/services/laser-tattoo-removal/">laser tattoo removal</a>, or rejuvenate your skin with our <a href="/services/skin-rejuvenation-carbon-laser/">carbon laser</a> and <a href="/services/skin-rejuvenation-ipl-treatments/">IPL treatments</a>, Alease is here to guide you every step of the way.</p>
+                <p>Have questions? <a href="/contact/">Contact Alease</a> today!</p>
+            </div>
+        </div>
     </div>
 </main>
 <?php
