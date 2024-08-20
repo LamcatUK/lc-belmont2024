@@ -22,25 +22,26 @@ $class = $block['className'] ?? null;
             $d += 200;
             }
             ?>
-            <div class="button-group" data-aos="fade-right"
-                data-aos-delay="<?=$d?>">
+            <div class="button-group">
                 <?php
 if (get_field('booking_link') ?? null) {
     ?>
-            <div class="hero__button">
-                <?=do_shortcode('[timely_button]')?>
-            </div>
-            <?php
+                <div class="hero__button" data-aos="fade-right"
+                data-aos-delay="<?=$d?>">
+                    <a href="/book-now/" class="button button-primary">Book Now</a>
+                </div>
+                <?php
+                $d += 200;
 }
 if (get_field('link') ?? null) {
-    $l = get_field('link');
-    ?>
-            <div class="hero__button" data-aos="fade-right"
-                data-aos-delay="<?=$d?>">
-                <a href="<?=$l['url']?>"
-                    target="<?=$l['target']?>"
-                    class="button button-primary"><?=$l['title']?></a>
-            </div>
+        $l = get_field('link');
+        ?>
+                <div class="hero__button" data-aos="fade-right"
+                    data-aos-delay="<?=$d?>">
+                    <a href="<?=$l['url']?>"
+                        target="<?=$l['target']?>"
+                        class="button button-primary"><?=$l['title']?></a>
+                </div>
             <?php
 }
 ?>

@@ -41,7 +41,7 @@ switch (get_field('split')) {
                 if (get_field('book_button') ?? null) {
                     ?>
                 <br>
-                <?=do_shortcode('[timely_button]')?>
+                <a href="/book-now/" class="button button-primary">Book Now</a>
                 <?php
                 }
 ?>

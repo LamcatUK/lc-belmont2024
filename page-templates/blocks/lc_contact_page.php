@@ -21,7 +21,7 @@
                     <?=get_field('opening_hours', 'options')?>
                 </div>
                 <div class="mb-3">To schedule an appointment, please click below</div>
-                <?=timelyButton()?>
+                <a href="/book-now/" class="button button-primary">Book Now</a>
                 <div class="my-4">Or email <a href="mailto:<?=get_field('contact_email', 'options')?>"><?=get_field('contact_email', 'options')?></a></div>
             </div>
             <div class="col-md-6" data-aos="fade-left">

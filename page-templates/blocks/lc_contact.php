@@ -20,7 +20,7 @@
                         <?=contact_phone()?>
                     </div>
                     <div class="mb-3">To schedule an appointment, please click below</div>
-                    <?=timelyButton()?>
+                    <a href="/book-now/" class="button button-primary">Book Now</a>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-left">

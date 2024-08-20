@@ -81,8 +81,7 @@ defined('ABSPATH') || exit;
                 Skin and
                 Laser Clinic</div>
             <div>
-                <a href="/privacy-policy/">Privacy</a> &amp; <a href="/cookie-policy/">Cookie</a> Policies | Site by <a
-                    href="https://www.lamcat.co.uk/" target="_blank">Lamcat</a>
+                <a href="/privacy-policy/">Privacy</a> &amp; <a href="/cookie-policy/">Cookie</a> Policies
             </div>
         </div>
     </div>
@@ -91,3 +90,7 @@ defined('ABSPATH') || exit;
 </body>
 
 </html>
+<?php
+//  | Site by <a
+//  href="https://www.lamcat.co.uk/" target="_blank">Lamcat</a>
+?>

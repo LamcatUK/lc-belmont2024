@@ -9,8 +9,8 @@
             <?php
             if (get_field('booking_link') ?? null) {
                 ?>
-                <div class="hero__button">
-                <?=do_shortcode('[timely_button]')?>
+            <div class="hero__button">
+                <a href="/book-now/" class="button button-primary">Book Now</a>
             </div>
                 <?php
             }
