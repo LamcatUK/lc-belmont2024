@@ -1,12 +1,13 @@
 <section class="latest_posts">
     <div class="container-xl py-5">
-        <h2 class="has-line text-taupe-400">The Belmont Blog</h2>
+        <h2 class="has-line text-taupe-400" data-aos="fade-right">The Belmont Blog</h2>
         <div class="grid pb-4">
             <?php
             $q = new WP_Query(array(
                 'post_type' => 'post',
                 'posts_per_page' => 3,
             ));
+            $d = 0;
             while ($q->have_posts()) {
                 $q->the_post();
                 $img = get_the_post_thumbnail_url(get_the_ID(), 'large');
@@ -22,6 +23,8 @@
         
                 ?>
                     <a class="grid__card"
+                        data-aos="fade-up"
+                        data-aos-delay="<?=$d?>"
                         href="<?=get_the_permalink(get_the_ID())?>">
                         <div class="card card--<?=$flashcat?>">
                             <div class="card__image_container">
@@ -45,6 +48,7 @@
                         </div>
                     </a>
                 <?php
+                $d += 200;
             }
             ?>
         </div>
