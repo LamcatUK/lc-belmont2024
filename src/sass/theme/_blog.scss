@@ -7,6 +7,7 @@
         text-decoration: none;
         box-sizing: border-box;
         margin: 0.5rem;
+        font-weight: var(--fw-400);
 
         flex: 1 1 calc(100% - 1rem); /* Each card takes up 100% of the container's width for very small screens */
         @media (min-width: 768px) {
