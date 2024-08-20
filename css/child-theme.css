@@ -22133,6 +22133,9 @@ footer .colophon a:hover {
   isolation: isolate;
   color: var(--col-white);
 }
+.hero__content a:hover {
+  color: var(--col-white);
+}
 .hero h1, .hero .h1 {
   color: var(--col-white);
 }

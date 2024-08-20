@@ -3,6 +3,11 @@
     position: relative;
     isolation: isolate;
     color: var(--col-white);
+    &__content {
+        a:hover {
+            color: var(--col-white);
+        }
+    }
     h1 {
         color: var(--col-white);
     }
