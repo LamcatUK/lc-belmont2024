@@ -21767,13 +21767,13 @@ strong, b, .fw-bold {
 }
 
 .button-primary {
-  border: 1px solid #39464e;
-  background-color: #39464e;
+  border: 1px solid var(--col-taupe-600);
+  background-color: var(--col-taupe-600);
   color: var(--col-white);
 }
 .button-primary:hover {
-  background-color: #889095;
-  border: 1px solid #889095;
+  background-color: var(--col-taupe-400);
+  border: 1px solid var(--col-taupe-400);
   color: var(--col-white);
 }
 

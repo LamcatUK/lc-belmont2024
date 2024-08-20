@@ -15,26 +15,18 @@ $pp = get_option('page_for_posts');
                 <h1 data-aos="fade-right">
                     <?=get_the_title($pp)?>
                 </h1>
-                <?php
-                $d = 0;
-if (get_the_content(null, false, $pp) ?? null) {
-    ?>
                 <div class="hero__content mb-4" data-aos="fade-right"
-                    data-aos-delay="<?=$d?>">
+                    data-aos-delay="0">
                     <?=get_the_content(null, false, $pp)?>
                 </div>
-                <?php
-}
-                $d += 200;
-?>            <div class="button-group" data-aos="fade-right"
-data-aos-delay="<?=$d?>">
-                <div class="hero__button">
-                    <?=do_shortcode('[timely_button]')?>
-                </div>
-                <div class="hero__button" data-aos="fade-right"
-                    data-aos-delay="<?=$d?>">
-                    <a href="/contact/" class="button button-primary">Contact Us</a>
-                </div>
+                <div class="button-group">
+                    <div class="hero__button" data-aos="fade-right" data-aos-delay="200">
+                        <a href="/book-now/" class="button button-primary">Book Now</a>
+                    </div>
+                    <div class="hero__button" data-aos="fade-right"
+                        data-aos-delay="400">
+                        <a href="/contact/" class="button button-primary">Contact Us</a>
+                    </div>
               </div>
             </div>
         </div>

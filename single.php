@@ -131,6 +131,8 @@ foreach ($blocks as $block) {
                     <?php
     }
 ?>
+
+                    <a href="/book-now/" class="button button-primary text-center d-none d-lg-block mb-2">Book Now</a>
                     <a href="/contact/" class="button button-primary text-center d-none d-lg-block">Contact Us
                         Today!</a>
                 </div>

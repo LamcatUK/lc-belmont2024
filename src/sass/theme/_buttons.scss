@@ -24,14 +24,12 @@
 }
 
 .button-primary {
-    // background-color: var(--col-taupe-600);
-    border: 1px solid #39464e;
-    background-color: #39464e;
+    border: 1px solid var(--col-taupe-600); // #39464e;
+    background-color: var(--col-taupe-600);
     color: var(--col-white);
     &:hover {
-        // background-color: var(--col-taupe-400);
-        background-color: #889095;
-        border: 1px solid #889095;
+        background-color: var(--col-taupe-400);
+        border: 1px solid var(--col-taupe-400); // #889095;
         color: var(--col-white);
     }
 }
