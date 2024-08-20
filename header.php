@@ -179,6 +179,10 @@ if (get_field('gtm_property', 'options')) {
                             class="navbar-nav w-100 justify-content-end align-items-lg-center mt-2 mt-lg-0 gap-2">
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                                 class="menu-item nav-item">
+                                <a href="/book-now/" class="topNav_phone">Book Now</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                class="menu-item nav-item">
                                 <a class="topNav_phone"
                                     href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>">Call
                                     <?=get_field('contact_phone', 'options')?></a>
