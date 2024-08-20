@@ -38,7 +38,7 @@ defined('ABSPATH') || exit;
                 <i class="fa-solid fa-envelope"></i>
                 <div>
                     <span class="small">Message Us</span>
-                    <div class="large">Send an email</div>
+                    <div class="large">Send an Email</div>
                 </div>
             </a>
 
