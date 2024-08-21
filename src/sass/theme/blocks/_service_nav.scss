@@ -22,7 +22,7 @@
             aspect-ratio: 3 / 4;
         }
         @media (min-width: 1400px) {
-            aspect-ratio: 1;
+            aspect-ratio: 1 / 1.2;
         }
 
     }
@@ -34,7 +34,6 @@
         object-fit: cover;
         z-index: -1;
         @media (min-width:768px) {
-            aspect-ratio: 4 / 3;
             aspect-ratio: 1;
             position: absolute;
         }
@@ -49,7 +48,7 @@
         }
         transition: top 250ms ease-in-out;
         display: grid;
-        grid-template-rows: 3.5rem auto;
+        grid-template-rows: 3rem auto;
         height: 100%;
     }
     &__title {

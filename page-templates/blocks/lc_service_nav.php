@@ -6,7 +6,7 @@
             while(have_rows('cards')) {
                 the_row();
                 ?>
-            <div class="col-md-6 col-xl-3">
+            <div class="col-lg-6 col-xl-3">
                 <a class="service_nav__card" data-aos="fade-up"
                     data-aos-delay="<?=$d?>"
                     href="<?=get_sub_field('link')?>">

@@ -22314,7 +22314,7 @@ footer .colophon a:hover {
 }
 @media (min-width: 1400px) {
   .service_nav__card {
-    aspect-ratio: 1;
+    aspect-ratio: 1/1.2;
   }
 }
 .service_nav__image {
@@ -22328,7 +22328,6 @@ footer .colophon a:hover {
 }
 @media (min-width: 768px) {
   .service_nav__image {
-    aspect-ratio: 4/3;
     aspect-ratio: 1;
     position: absolute;
   }
@@ -22338,7 +22337,7 @@ footer .colophon a:hover {
   background-color: hsl(var(--hsl-taupe-600)/1);
   transition: top 250ms ease-in-out;
   display: grid;
-  grid-template-rows: 3.5rem auto;
+  grid-template-rows: 3rem auto;
   height: 100%;
 }
 @media (min-width: 768px) {
