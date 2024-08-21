@@ -73,3 +73,12 @@ input[type=submit].wpcf7-submit {
         }
     }
 }
+
+@media (min-width:992px) {
+    .w-md-50 {
+        max-width: 50%;
+    }
+    .w-md-75 {
+        max-width: 75%;
+    }
+}
