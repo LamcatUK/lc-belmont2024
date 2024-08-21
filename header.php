@@ -176,14 +176,14 @@ if (get_field('gtm_property', 'options')) {
                 <div class="w-100 d-flex flex-column-reverse flex-lg-column">
                     <div id="topNav" class="px-2 px-lg-0 pb-4 pb-lg-0 collapse navbar-collapse navbars">
                         <ul id="top-nav"
-                            class="navbar-nav w-100 justify-content-end align-items-lg-center mt-2 mt-lg-0 gap-2">
+                            class="navbar-nav w-100 justify-content-end align-items-lg-center mt-2 mt-lg-0 gap-4">
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                                 class="menu-item nav-item">
-                                <a href="/book-now/" class="topNav_phone">Book Now</a>
+                                <a href="/book-now/" class="topNav_phone d-block text-center">Book Now</a>
                             </li>
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                                 class="menu-item nav-item">
-                                <a class="topNav_phone"
+                                <a class="topNav_phone d-block text-center"
                                     href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>">Call
                                     <?=get_field('contact_phone', 'options')?></a>
                             </li>

@@ -21791,6 +21791,12 @@ header .dropdown-menu {
   --bs-dropdown-link-active-bg: var(--col-taupe-600);
   --bs-dropdown-border-radius: 0 ;
 }
+header .navbar-collapse {
+  transition: none !important;
+}
+header .collapse {
+  transition: none !important;
+}
 header.hidden {
   top: -110px;
 }

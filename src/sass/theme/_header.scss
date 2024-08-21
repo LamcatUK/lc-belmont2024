@@ -4,6 +4,14 @@ header {
         --bs-dropdown-border-radius: 0
     }
 
+    .navbar-collapse {
+        transition: none !important;
+    }
+    
+    .collapse {
+        transition: none !important;
+    }
+
     position: fixed;
     top: 0;
     left: 0;
