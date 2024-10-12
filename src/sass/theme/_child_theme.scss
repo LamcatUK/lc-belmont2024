@@ -82,3 +82,9 @@ input[type=submit].wpcf7-submit {
         max-width: 75%;
     }
 }
+
+.cols-md-2 {
+    @media (min-width:768px) {
+        columns: 2;
+    }
+}

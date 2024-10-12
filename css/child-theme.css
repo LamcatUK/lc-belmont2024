@@ -22017,7 +22017,7 @@ footer .colophon a:hover {
 .grid .card__inner {
   padding: 1rem;
   display: grid;
-  grid-template-rows: auto 1rem 1fr;
+  grid-template-rows: 6rem 1rem 1fr;
   gap: 0.5rem;
 }
 .grid .card__date {
@@ -22594,6 +22594,13 @@ input[type=submit].wpcf7-submit:hover {
     max-width: 75%;
   }
 }
+@media (min-width: 768px) {
+  .cols-md-2 {
+    -moz-columns: 2;
+    columns: 2;
+  }
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
