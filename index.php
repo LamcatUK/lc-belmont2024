@@ -101,6 +101,7 @@ $pp = get_option('page_for_posts');
 add_action('wp_footer', function () {
 ?>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
     <script>
         function setEqualHeight(cards) {
             let maxHeight = 0;
