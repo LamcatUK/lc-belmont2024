@@ -132,6 +132,21 @@ add_action('wp_footer', function () {
                 layoutMode: 'fitRows',
             });
 
+            // Apply equal height after initial layout
+            const cards = document.querySelectorAll('.grid__card');
+            setEqualHeight(cards);
+
+            // Re-layout after images load and set equal height again
+            imagesLoaded(grid, function() {
+                iso.layout();
+                setEqualHeight(cards);
+            });
+
+            // Ensure equal height is re-applied after filtering or sorting
+            iso.on('arrangeComplete', function() {
+                setEqualHeight(cards);
+            });
+
             var filterButtons = document.querySelectorAll('.filters button');
             filterButtons.forEach(function(button) {
                 button.addEventListener('click', function() {
