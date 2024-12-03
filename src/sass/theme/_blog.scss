@@ -59,7 +59,7 @@
         &__inner {
             padding: 1rem;
             display: grid;
-            grid-template-rows: 6rem 1rem 1fr;
+            grid-template-rows: auto 1rem 1fr;
             gap: 0.5rem;
         }
         &__date {
