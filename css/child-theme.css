@@ -22143,7 +22143,7 @@ footer .colophon a:hover {
 }
 .blog_card__title {
   font-family: var(--ff-body);
-  font-size: var(--fs-400);
+  font-size: var(--fs-400) !important;
   font-weight: var(--fw-600);
 }
 
