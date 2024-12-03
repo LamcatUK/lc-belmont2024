@@ -192,3 +192,16 @@
         outline-offset: -1px;
     }
 }
+
+.blog_card {
+    &__image {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+    }
+    &__title {
+        font-family: var(--ff-body);
+        font-size: var(--fs-400);
+        font-weight: var(--fw-600);
+    }
+}

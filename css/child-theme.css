@@ -22135,6 +22135,18 @@ footer .colophon a:hover {
   outline-offset: -1px;
 }
 
+.blog_card__image {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.blog_card__title {
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+}
+
 .hero {
   height: 600px;
   position: relative;
