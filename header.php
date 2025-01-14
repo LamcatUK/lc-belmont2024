@@ -28,6 +28,7 @@ defined('ABSPATH') || exit;
   <link rel="preload"
     href="<?= get_stylesheet_directory_uri() ?>/fonts/montserrat-v26-latin-600.woff2"
     as="font" type="font/woff2" crossorigin="anonymous">
+  <meta name="msvalidate.01" content="E6F5C30AAAA2E2AD3FA070F88CC885B3" />
   <?php
   if (get_field('ga_property', 'options')) {
     if (!is_user_logged_in()) {
@@ -144,7 +145,6 @@ defined('ABSPATH') || exit;
   }
   ?>
   <?php wp_head(); ?>
-  <meta name="msvalidate.01" content="E6F5C30AAAA2E2AD3FA070F88CC885B3" />
 </head>
 
 <body <?php body_class(); ?>>
