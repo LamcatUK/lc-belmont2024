@@ -47,7 +47,7 @@ defined('ABSPATH') || exit;
           '<?= get_field('ga_property', 'options') ?>'
         );
       </script>
-  <?php
+    <?php
     }
   }
   if (get_field('google_site_verification', 'options')) {
@@ -56,11 +56,8 @@ defined('ABSPATH') || exit;
   if (get_field('bing_site_verification', 'options')) {
     echo '<meta name="msvalidate.01" content="' . get_field('bing_site_verification', 'options') . '" />';
   }
-  ?>
-  <meta name="msvalidate.01" content="E6F5C30AAAA2E2AD3FA070F88CC885B3" />
-  <?php
   if (is_front_page() || is_page('contact-us')) {
-  ?>
+    ?>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -147,6 +144,7 @@ defined('ABSPATH') || exit;
   }
   ?>
   <?php wp_head(); ?>
+  <meta name="msvalidate.01" content="E6F5C30AAAA2E2AD3FA070F88CC885B3" />
 </head>
 
 <body <?php body_class(); ?>>
