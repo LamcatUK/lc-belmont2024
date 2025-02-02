@@ -7,6 +7,21 @@ defined('ABSPATH') || exit;
 
 get_header('connect');
 ?>
+<style>
+    body {
+        min-height: 100vh;
+        display: grid;
+        align-items: stretch;
+    }
+
+    .grecaptcha-badge {
+        display: none !important;
+    }
+
+    footer .colophon {
+        border-top: none;
+    }
+</style>
 <main class="mt-3">
     <img src="<?= get_stylesheet_directory_uri() ?>/img/belmont-logo.png" class="d-block mx-auto" alt="Belmont Skin & Laser Clinic">
     <div class="container-xl pt-5 qr">
