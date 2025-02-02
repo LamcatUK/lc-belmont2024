@@ -5,7 +5,7 @@ Template Name: Links
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-get_header();
+get_header('connect');
 ?>
 <main>
     <img src="<?= get_stylesheet_directory_uri() ?>/img/belmont-logo.png" alt="Belmont Skin & Laser Clinic">
@@ -50,5 +50,5 @@ get_header();
     </div>
 </main>
 <?php
-get_footer();
+get_footer('connect');
 ?>
