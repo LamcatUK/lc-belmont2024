@@ -42,14 +42,14 @@ get_header('connect');
     <div class="container-xl pt-4 qr">
         <h2 class="h4 my-2 text-center">Contact</h2>
 
+        <a class="button button-outline-primary d-block text-center mb-3" href="/book-now/">
+            <i class="fa-solid fa-calendar-days"></i> Book Now
+        </a>
         <a class="button button-outline-primary d-block text-center mb-3" href="mailto:<?= get_field('contact_email', 'options') ?>">
             <i class="fa-solid fa-envelope"></i> Email Us
         </a>
         <a class="button button-outline-primary d-block text-center mb-3" href="tel:<?= parse_phone(get_field('contact_phone', 'options')) ?>">
             <i class="fa-solid fa-phone"></i> Call <?= get_field('contact_phone', 'options') ?>
-        </a>
-        <a class="button button-outline-primary d-block text-center mb-3" href="/book-now/">
-            <i class="fa-solid fa-calendar-days"></i> Book Now
         </a>
         <a class="button button-outline-primary d-block text-center mb-3" href="https://search.google.com/local/writereview?placeid=ChIJC72RFq69dUgRgMBpRhO-xk4" target="_blank">
             <i class="fa-solid fa-star"></i> Leave a Review
