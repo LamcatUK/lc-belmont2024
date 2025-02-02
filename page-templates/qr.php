@@ -15,7 +15,11 @@ get_header('connect');
     }
 
     body>div:not([class]) {
-        display: none;
+        display: none !important;
+    }
+
+    [class^="cky-"] {
+        display: none !important;
     }
 
     .grecaptcha-badge {
