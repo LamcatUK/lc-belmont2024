@@ -12,6 +12,7 @@ get_header('connect');
         min-height: 100vh;
         display: grid;
         align-items: stretch;
+        grid-template-rows: 1fr auto;
     }
 
     body>div:not([class]) {
@@ -28,6 +29,8 @@ get_header('connect');
 
     footer .colophon {
         border-top: none;
+        text-align: center;
+        padding-block: 0.5rem;
     }
 </style>
 <main class="mt-3">
