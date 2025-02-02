@@ -39,7 +39,7 @@ get_header('connect');
 </style>
 <main class="mt-3">
     <img src="<?= get_stylesheet_directory_uri() ?>/img/belmont-logo.png" class="d-block mx-auto" alt="Belmont Skin & Laser Clinic">
-    <div class="container-xl pt-5 qr">
+    <div class="container-xl pt-4 qr">
         <h2 class="h4 my-2 text-center">Contact</h2>
 
         <a class="button button-outline-primary d-block text-center mb-3" href="mailto:<?= get_field('contact_email', 'options') ?>">
@@ -52,7 +52,7 @@ get_header('connect');
             <i class="fa-solid fa-calendar-days"></i> Book Now
         </a>
 
-        <h2 class="h4 mt-3 mb-2 text-center">Connect</h2>
+        <h2 class="h4 mt-4 mb-2 text-center">Connect</h2>
         <?php
         $s = get_field('socials', 'options');
         // echo '<pre>' . var_dump($s) . '</pre>';
