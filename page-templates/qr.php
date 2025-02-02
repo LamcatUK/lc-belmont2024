@@ -14,6 +14,10 @@ get_header('connect');
         align-items: stretch;
     }
 
+    body>div:not([class]) {
+        display: none;
+    }
+
     .grecaptcha-badge {
         display: none !important;
     }
