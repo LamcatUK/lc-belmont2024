@@ -1,10 +1,11 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
  * Contains the closing of the #content div and all content after
  *
- * @package cb-peoplesafe
+ * @package lc-belmont2024
  */
 
 // Exit if accessed directly.
@@ -15,7 +16,7 @@ defined('ABSPATH') || exit;
     <div class="container-xl">
         <div class="pre_footer">
             <a class="pre_footer__card"
-                href="<?=get_field('directions_link', 'options')?>"
+                href="<?= get_field('directions_link', 'options') ?>"
                 target="_blank">
                 <i class="fa-solid fa-map"></i>
                 <div>
@@ -24,17 +25,17 @@ defined('ABSPATH') || exit;
                 </div>
             </a>
             <a class="pre_footer__card"
-                href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>">
+                href="tel:<?= parse_phone(get_field('contact_phone', 'options')) ?>">
                 <i class="fa-solid fa-phone"></i>
                 <div>
                     <span class="small">Text or call for more information</span>
                     <div class="large">
-                        <?=get_field('contact_phone', 'options')?>
+                        <?= get_field('contact_phone', 'options') ?>
                     </div>
                 </div>
             </a>
             <a class="pre_footer__card"
-                href="mailto:<?=get_field('contact_email', 'options')?>">
+                href="mailto:<?= get_field('contact_email', 'options') ?>">
                 <i class="fa-solid fa-envelope"></i>
                 <div>
                     <span class="small">Message Us</span>
@@ -48,7 +49,7 @@ defined('ABSPATH') || exit;
             <div class="col-12 col-lg-4">
                 <div class="h4 has-line">About Us</div>
                 <div class="footer__content">
-                    <?=get_field('footer_content', 'options')?>
+                    <?= get_field('footer_content', 'options') ?>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-2">
@@ -63,21 +64,21 @@ defined('ABSPATH') || exit;
                 <div class="h4 has-line">Contact Us</div>
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span>
-                        <?=get_field('contact_address', 'options')?>
+                        <?= get_field('contact_address', 'options') ?>
                     </li>
                     <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
-                        <?=contact_phone()?>
+                        <?= contact_phone() ?>
                     </li>
                     <li><span class="fa-li"><i class="fa-solid fa-paper-plane"></i></span>
-                        <?=contact_email()?>
+                        <?= contact_email() ?>
                     </li>
                 </ul>
                 <div class="h5 ff-heading">Connect</div>
-                <?=social_icons()?>
+                <?= social_icons() ?>
             </div>
         </div>
         <div class="colophon">
-            <div>&copy; <?=date('Y')?> Belmont
+            <div>&copy; <?= date('Y') ?> Belmont
                 Skin and
                 Laser Clinic</div>
             <div>

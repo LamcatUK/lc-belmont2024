@@ -5,7 +5,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package cb-peoplesafe
+ * @package lc-belmont2024
  */
 
 // Exit if accessed directly.
