@@ -51,6 +51,9 @@ get_header('connect');
         <a class="button button-outline-primary d-block text-center mb-3" href="/book-now/">
             <i class="fa-solid fa-calendar-days"></i> Book Now
         </a>
+        <a class="button button-outline-primary d-block text-center mb-3" href="https://search.google.com/local/writereview?placeid=ChIJC72RFq69dUgRgMBpRhO-xk4" target="_blank">
+            <i class="fa-solid fa-star"></i> Leave a Review
+        </a>
 
         <h2 class="h4 mt-4 mb-2 text-center">Connect</h2>
         <?php
