@@ -20,7 +20,7 @@ switch (get_field('split')) {
 <section class="title_text py-5">
     <div class="container-xl" style="overflow-x: hidden;">
         <div class="row">
-            <div class="<?= $colTitle ?>" data-aos="fade-right">
+            <div class="<?= $colTitle ?>" data-aos="fade-up">
                 <?php
                 if (get_field('pre_title') ?? null) {
                 ?>
@@ -34,7 +34,7 @@ switch (get_field('split')) {
                     <?= get_field('title') ?>
                 </h2>
             </div>
-            <div class="<?= $colText ?>" data-aos="fade-left">
+            <div class="<?= $colText ?>" data-aos="fade-up">
                 <div><?= get_field('content') ?>
                 </div>
                 <?php

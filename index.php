@@ -12,18 +12,18 @@ $pp = get_option('page_for_posts');
         <div class="overlay"></div>
         <div class="container-xl h-100 d-flex align-items-center">
             <div class="hero__inner">
-                <h1 data-aos="fade-right">
+                <h1 data-aos="fade-up">
                     <?= get_the_title($pp) ?>
                 </h1>
-                <div class="hero__content mb-4" data-aos="fade-right"
+                <div class="hero__content mb-4" data-aos="fade-up"
                     data-aos-delay="0">
                     <?= get_the_content(null, false, $pp) ?>
                 </div>
                 <div class="button-group">
-                    <div class="hero__button" data-aos="fade-right" data-aos-delay="200">
+                    <div class="hero__button" data-aos="fade-up" data-aos-delay="200">
                         <a href="/book-now/" class="button button-primary">Book Now</a>
                     </div>
-                    <div class="hero__button" data-aos="fade-right"
+                    <div class="hero__button" data-aos="fade-up"
                         data-aos-delay="400">
                         <a href="/contact/" class="button button-primary">Contact Us</a>
                     </div>

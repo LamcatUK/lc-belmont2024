@@ -1,7 +1,7 @@
 <section class="contact">
     <div class="container-xl" style="overflow-x: hidden;">
         <div class="row g-5">
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-6" data-aos="fade-up">
                 <h2 class="text-taupe-400 has-line">Contact Us</h2>
                 <div class="contact__inner mb-4">
                     <div class="contact__address">
@@ -23,7 +23,7 @@
                     <a href="/book-now/" class="button button-primary">Book Now</a>
                 </div>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6" data-aos="fade-up">
                 <iframe title="Find The Belmont Skin and Laser Clinic"
                     src="<?= get_field('google_map', 'options') ?>"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"

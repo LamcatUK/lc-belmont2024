@@ -28,8 +28,8 @@ $orderImage = get_field('order') == 'text image' ? 'order-md-2' : 'order-md-1';
 $orderTextMobile = get_field('mobile_order') == 'text image' ? 'order-1' : 'order-2';
 $orderImageMobile = get_field('mobile_order') == 'text image' ? 'order-2' : 'order-1';
 
-$animText = get_field('order') == 'text image' ? 'fade-right' : 'fade-left';
-$animImage = get_field('order') == 'text image' ? 'fade-left' : 'fade-right';
+$animText = get_field('order') == 'text image' ? 'fade-up' : 'fade-up';
+$animImage = get_field('order') == 'text image' ? 'fade-up' : 'fade-up';
 
 
 if (isset($block['anchor'])) {

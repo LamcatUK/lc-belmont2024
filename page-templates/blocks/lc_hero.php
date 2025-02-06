@@ -8,13 +8,13 @@ $class = $block['className'] ?? null;
     <div class="overlay"></div>
     <div class="container-xl h-100 d-flex align-items-center">
         <div class="hero__inner">
-            <h1 data-aos="fade-right">
+            <h1 data-aos="fade-up">
                 <?= get_field('title') ?>
             </h1>
             <?php
             if (get_field('content') ?? null) {
             ?>
-                <div class="hero__content mb-4" data-aos="fade-right"
+                <div class="hero__content mb-4" data-aos="fade-up"
                     data-aos-delay="<?= $d ?>">
                     <?= get_field('content') ?>
                 </div>
@@ -26,7 +26,7 @@ $class = $block['className'] ?? null;
                 <?php
                 if (get_field('booking_link') ?? null) {
                 ?>
-                    <div class="hero__button" data-aos="fade-right"
+                    <div class="hero__button" data-aos="fade-up"
                         data-aos-delay="<?= $d ?>">
                         <a href="/book-now/" class="button button-primary">Book Now</a>
                     </div>
@@ -36,7 +36,7 @@ $class = $block['className'] ?? null;
                 if (get_field('link') ?? null) {
                     $l = get_field('link');
                 ?>
-                    <div class="hero__button" data-aos="fade-right"
+                    <div class="hero__button" data-aos="fade-up"
                         data-aos-delay="<?= $d ?>">
                         <a href="<?= $l['url'] ?>"
                             target="<?= $l['target'] ?>"

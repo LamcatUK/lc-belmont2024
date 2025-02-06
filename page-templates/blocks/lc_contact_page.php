@@ -1,7 +1,7 @@
 <section class="contact_page">
     <div class="container-xl" style="overflow-x: hidden;">
         <div class="row g-5 mb-4 pb-5">
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-6" data-aos="fade-up">
                 <div class="contact__address mb-4">
                     <h2 class="h3">Our Clinic</h2>
                     <?= get_field('contact_address', 'options') ?>
@@ -24,7 +24,7 @@
                 <a href="/book-now/" class="button button-primary">Book Now</a>
                 <div class="my-4">Or email <a href="mailto:<?= get_field('contact_email', 'options') ?>"><?= get_field('contact_email', 'options') ?></a></div>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6" data-aos="fade-up">
                 <h2 class="h3">Get in Touch</h2>
                 <?= do_shortcode('[contact-form-7 id="' . get_field('contact_form_id', 'options') . '"]') ?>
             </div>

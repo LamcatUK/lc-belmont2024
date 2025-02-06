@@ -1,6 +1,6 @@
 <section class="latest_posts">
     <div class="container-xl py-5" style="overflow-x: hidden;">
-        <h2 class="has-line text-taupe-400" data-aos="fade-right">The Belmont Blog</h2>
+        <h2 class="has-line text-taupe-400" data-aos="fade-up">The Belmont Blog</h2>
         <div class="grid pb-4">
             <?php
             $q = new WP_Query(array(
