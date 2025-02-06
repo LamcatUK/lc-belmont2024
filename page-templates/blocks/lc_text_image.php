@@ -39,7 +39,7 @@ if (isset($block['anchor'])) {
 ?>
 <section
     class="text_image bg-<?= $background ?> <?= $class ?>">
-    <div class="container-xl" style="overflow-x: hidden;">
+    <div class="container-xl">
         <div class="row g-5">
             <div
                 class="<?= $colText ?> <?= $orderTextMobile ?> <?= $orderText ?> d-flex flex-column justify-content-center">

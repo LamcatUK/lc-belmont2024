@@ -1,5 +1,5 @@
 <section class="contact">
-    <div class="container-xl" style="overflow-x: hidden;">
+    <div class="container-xl">
         <div class="row g-5">
             <div class="col-md-6" data-aos="fade-up">
                 <h2 class="text-taupe-400 has-line">Contact Us</h2>

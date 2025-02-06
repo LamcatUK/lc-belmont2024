@@ -18,7 +18,7 @@ switch (get_field('split')) {
 }
 ?>
 <section class="title_text py-5">
-    <div class="container-xl" style="overflow-x: hidden;">
+    <div class="container-xl">
         <div class="row">
             <div class="<?= $colTitle ?>" data-aos="fade-up">
                 <?php

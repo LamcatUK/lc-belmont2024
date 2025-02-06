@@ -1,7 +1,7 @@
 <?php
 $class = $block['className'] ?? 'py-5';
 ?>
-<section class="faq_block <?= $class ?>" style="overflow-x: hidden;">
+<section class="faq_block <?= $class ?>">
     <div class="container-xl" data-aos="fade-up">
         <?php
         if (get_field('faq_title')) {

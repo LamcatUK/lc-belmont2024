@@ -3,7 +3,7 @@ $d = 200;
 $class = $block['className'] ?? null;
 ?>
 
-<section class="hero <?= $class ?>" style="overflow-x: hidden;">
+<section class="hero <?= $class ?>">
     <?= wp_get_attachment_image(get_field('background'), 'full', false, array('class' => 'hero__bg')) ?>
     <div class="overlay"></div>
     <div class="container-xl h-100 d-flex align-items-center">

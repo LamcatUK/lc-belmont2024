@@ -1,5 +1,5 @@
 <section class="service_nav">
-    <div class="container-xl" style="overflow-x: hidden;">
+    <div class="container-xl">
         <div class="row g-4">
             <?php
             $d = 0;
