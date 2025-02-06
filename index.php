@@ -7,7 +7,7 @@ $pp = get_option('page_for_posts');
 
 ?>
 <main id="main" class="pb-5">
-    <section class=" hero">
+    <section class="hero" style="overflow-x: hidden;">
         <?= get_the_post_thumbnail($pp, 'full', array('class' => 'hero__bg')) ?>
         <div class="overlay"></div>
         <div class="container-xl h-100 d-flex align-items-center">

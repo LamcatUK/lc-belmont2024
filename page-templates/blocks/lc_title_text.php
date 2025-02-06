@@ -18,33 +18,33 @@ switch (get_field('split')) {
 }
 ?>
 <section class="title_text py-5">
-    <div class="container-xl">
+    <div class="container-xl" style="overflow-x: hidden;">
         <div class="row">
-            <div class="<?=$colTitle?>" data-aos="fade-right">
+            <div class="<?= $colTitle ?>" data-aos="fade-right">
                 <?php
                 if (get_field('pre_title') ?? null) {
-                    ?>
-                <div class="ff-body small text-uppercase mb-2">
-                    <?=get_field('pre_title')?>
-                </div>
+                ?>
+                    <div class="ff-body small text-uppercase mb-2">
+                        <?= get_field('pre_title') ?>
+                    </div>
                 <?php
                 }
-?>
+                ?>
                 <h2 class="has-line text-taupe-400">
-                    <?=get_field('title')?>
+                    <?= get_field('title') ?>
                 </h2>
             </div>
-            <div class="<?=$colText?>" data-aos="fade-left">
-                <div><?=get_field('content')?>
+            <div class="<?= $colText ?>" data-aos="fade-left">
+                <div><?= get_field('content') ?>
                 </div>
                 <?php
                 if (get_field('book_button') ?? null) {
-                    ?>
-                <br>
-                <a href="/book-now/" class="button button-primary">Book Now</a>
+                ?>
+                    <br>
+                    <a href="/book-now/" class="button button-primary">Book Now</a>
                 <?php
                 }
-?>
+                ?>
             </div>
         </div>
     </div>

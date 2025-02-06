@@ -1,5 +1,5 @@
 <section class="contact_page">
-    <div class="container-xl">
+    <div class="container-xl" style="overflow-x: hidden;">
         <div class="row g-5 mb-4 pb-5">
             <div class="col-md-6" data-aos="fade-right">
                 <div class="contact__address mb-4">

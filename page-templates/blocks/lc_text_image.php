@@ -38,25 +38,25 @@ if (isset($block['anchor'])) {
 
 ?>
 <section
-    class="text_image bg-<?=$background?> <?=$class?>">
-    <div class="container-xl">
+    class="text_image bg-<?= $background ?> <?= $class ?>">
+    <div class="container-xl" style="overflow-x: hidden;">
         <div class="row g-5">
             <div
-                class="<?=$colText?> <?=$orderTextMobile?> <?=$orderText?> d-flex flex-column justify-content-center">
-                <div data-aos="<?=$animText?>">
-                    <h2 class="has-line text-<?=$title?>">
-                        <?=get_field('title')?>
+                class="<?= $colText ?> <?= $orderTextMobile ?> <?= $orderText ?> d-flex flex-column justify-content-center">
+                <div data-aos="<?= $animText ?>">
+                    <h2 class="has-line text-<?= $title ?>">
+                        <?= get_field('title') ?>
                     </h2>
                     <div class="fs-600">
-                        <?=get_field('content')?>
+                        <?= get_field('content') ?>
                     </div>
                 </div>
             </div>
             <div
-                class="<?=$colImage?> <?=$orderImageMobile?> <?=$orderImage?> d-flex justify-content-center align-items-center">
+                class="<?= $colImage ?> <?= $orderImageMobile ?> <?= $orderImage ?> d-flex justify-content-center align-items-center">
 
-                <img src="<?=wp_get_attachment_image_url(get_field('image'), 'large')?>"
-                    alt="" data-aos="<?=$animImage?>">
+                <img src="<?= wp_get_attachment_image_url(get_field('image'), 'large') ?>"
+                    alt="" data-aos="<?= $animImage ?>">
             </div>
         </div>
     </div>
