@@ -26,11 +26,9 @@
     }
   }
   // For cards in col-xl-4 parent, use 4/3 aspect ratio at xl
-  .col-xl-4 & {
-    &__card {
-      @media (min-width: 1200px) {
-        aspect-ratio: 4 / 3;
-      }
+  .col-xl-4 &__card {
+    @media (min-width: 1200px) {
+      aspect-ratio: 4 / 3;
     }
   }
   &__image {
