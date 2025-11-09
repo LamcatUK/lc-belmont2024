@@ -17,11 +17,12 @@ defined( 'ABSPATH' ) || exit;
     <div class="container-xl">
         <div class="row g-4 justify-content-center">
             <?php
-            $d = 0;
+            $d          = 0;
+            $card_count = count( get_field( 'cards' ) );
+            $col_class  = ( 0 === $card_count % 2 ) ? 'col-xl-4' : 'col-xl-3';
 
             while ( have_rows( 'cards' ) ) {
                 the_row();
-                $col_class = ( 0 === get_row_index() % 2 ) ? 'col-xl-3' : 'col-xl-4';
                 ?>
                 <div class="col-lg-6 <?= esc_attr( $col_class ); ?>">
                     <a class="service_nav__card" data-aos="fade-up"
