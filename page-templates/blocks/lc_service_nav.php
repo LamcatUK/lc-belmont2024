@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
             <?php
             $d          = 0;
             $card_count = count( get_field( 'cards' ) );
-            $col_class  = ( 0 === $card_count % 2 ) ? 'col-xl-4' : 'col-xl-3';
+            $col_class  = ( 0 === $card_count % 2 ) ? 'col-xl-3' : 'col-xl-4';
 
             while ( have_rows( 'cards' ) ) {
                 the_row();
