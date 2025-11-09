@@ -1,27 +1,44 @@
+<?php
+/**
+ * Service Navigation Block Template.
+ *
+ * @param   array $block The block settings and attributes.
+ * @param   string $content The block inner HTML (empty).
+ * @param   bool $is_preview True during AJAX preview.
+ * @param   (int|string) $post_id The post ID this block is saved to.
+ *
+ * @package lc-belmont2024
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+?>
 <section class="service_nav">
     <div class="container-xl">
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
             <?php
             $d = 0;
-            while (have_rows('cards')) {
+
+            while ( have_rows( 'cards' ) ) {
                 the_row();
-            ?>
-                <div class="col-lg-6 col-xl-3">
+                $col_class = ( 0 === get_row_index() % 2 ) ? 'col-xl-3' : 'col-xl-4';
+                ?>
+                <div class="col-lg-6 <?= esc_attr( $col_class ); ?>">
                     <a class="service_nav__card" data-aos="fade-up"
-                        data-aos-delay="<?= $d ?>"
-                        href="<?= get_sub_field('link') ?>">
-                        <?= wp_get_attachment_image(get_sub_field('image'), 'large', false, array('class' => 'service_nav__image')) ?>
+                        data-aos-delay="<?= esc_attr( $d ); ?>"
+                        href="<?= esc_attr( get_sub_field( 'link' ) ); ?>">
+                        <?= wp_get_attachment_image( get_sub_field( 'image' ), 'large', false, array( 'class' => 'service_nav__image' ) ); ?>
                         <div class="service_nav__inner">
                             <h2 class="service_nav__title">
-                                <?= get_sub_field('title') ?>
-                                </h3>
-                                <div class="service_nav__content">
-                                    <?= get_sub_field('content') ?>
-                                </div>
+                                <?= wp_kses_post( get_sub_field( 'title' ) ); ?>
+                            </h2>
+                            <div class="service_nav__content">
+                                <?= wp_kses_post( get_sub_field( 'content' ) ); ?>
+                            </div>
                         </div>
                     </a>
                 </div>
-            <?php
+                <?php
                 $d += 100;
             }
             ?>

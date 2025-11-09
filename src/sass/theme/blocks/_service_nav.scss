@@ -1,61 +1,68 @@
 .service_nav {
-    &__card {
-        display: grid;
-        height: 100%;
-        grid-template-rows: auto 1fr;
-        color: var(--col-cream-300) !important;
-        text-decoration: none;
-        
-        position: relative;
-        isolation: isolate;
-        
-        @media (min-width:768px) {
-            aspect-ratio: 4 / 3;
-            overflow: hidden;
-            &:hover {
-                .service_nav__inner {
-                    top: 0;
-                }
-            }
-        }
-        @media (min-width: 1200px) {
-            aspect-ratio: 3 / 4;
-        }
-        @media (min-width: 1400px) {
-            aspect-ratio: 1 / 1.2;
-        }
+  &__card {
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr;
+    color: var(--col-cream-300) !important;
+    text-decoration: none;
 
-    }
-    &__image {
-        aspect-ratio: 16 / 9;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        @media (min-width:768px) {
-            aspect-ratio: 1;
-            position: absolute;
+    position: relative;
+    isolation: isolate;
+
+    @media (min-width: 768px) {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      &:hover {
+        .service_nav__inner {
+          top: 0;
         }
+      }
     }
-    &__inner {
-        padding: 1rem;
-        background-color: hsl( var(--hsl-taupe-600) / 1);
-        @media (min-width:768px) {
-            position: absolute;
-            top: calc(100% - 3.5rem);
-            background-color: rgba(0 0 0 / 0.4);
-        }
-        transition: top 250ms ease-in-out;
-        display: grid;
-        grid-template-rows: 3rem auto;
-        height: 100%;
+    @media (min-width: 1200px) {
+      aspect-ratio: 3 / 4;
     }
-    &__title {
-        font-size: var(--fs-400);
-        color: var(--col-cream-400);
+    @media (min-width: 1400px) {
+      aspect-ratio: 1 / 1.2;
     }
-    &__content {
-        font-weight: var(--fw-400);
+  }
+  // For cards in col-xl-4 parent, use 4/3 aspect ratio at xl
+  .col-xl-4 & {
+    &__card {
+      @media (min-width: 1200px) {
+        aspect-ratio: 4 / 3;
+      }
     }
+  }
+  &__image {
+    aspect-ratio: 16 / 9;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    @media (min-width: 768px) {
+      aspect-ratio: 1;
+      position: absolute;
+    }
+  }
+  &__inner {
+    padding: 1rem;
+    background-color: hsl(var(--hsl-taupe-600) / 1);
+    @media (min-width: 768px) {
+      position: absolute;
+      top: calc(100% - 3.5rem);
+      background-color: rgba(0 0 0 / 0.4);
+    }
+    transition: top 250ms ease-in-out;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    height: 100%;
+  }
+  &__title {
+    font-size: var(--fs-400);
+    color: var(--col-cream-400);
+  }
+  &__content {
+    font-weight: var(--fw-400);
+  }
 }
